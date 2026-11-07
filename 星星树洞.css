@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* 将内外边距修改为零 达到消除浏览器自带css样式的效果 */
+}
+/* 以下为导航栏区域的样式 */
+header{
+    background-color: rgba(104, 34, 203, 0.3);
+    /* 0.7表示背景色透明度（透明度数值为0~1） */
+    height: 40px;
+    width: 100vw;
+    top: 0;
+    padding: 10px;
+    position: relative;
+    border: 0px solid black;
+    position: fixed;
+    /* 保持所选区域一直存在于窗口上方 */
+}
+.meun{
+    display: none;
+}
+header h1{
+    color:white;
+    line-height: 40px;
+    top: 15px;
+    /* 所选内容与上边框的距离 */
+    position:absolute;
+    margin-left: 5vw;
+    background-image: url(images/星星树洞logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    text-indent: -9999px;
+    
+}
+header ul{
+    color:white;
+    position: absolute;
+    /* 设置文本移动方式为绝对移动 */
+    right: 3vw;
+    top: 0;
+    line-height: 60px;
+}
+header li{
+    display: inline;
+    /* 设置所选内容样式为行内样式 */
+    margin-right: 20px;
+    /* 设置所选内容距离右侧边框的宽度 */
+}
+header a{
+    text-decoration: none;
+    /* 取消文本装饰 */
+    color: white;
+    font-family: "幼圆","萍方",sans-serif;
+    font-size: 20px;
+}
+section,footer{
+    background-color: rgb(48, 83, 48);
+    margin: 0px;
+    padding: 30px 20px;
+}
+header a:hover{
+    /* 所选内容被选中时将会运用以下样式 */
+    color: aqua;
+    text-decoration: underline;
+    cursor: pointer;
+    /* 设置鼠标光标为手指 */
+
+}
+/* 以下为我们的背景的样式 */
+.main1{
+    height: 600px;
+    border: 0px dashed white;
+    /* 设置所选区块边框线厚度为1像素 类型为虚线 颜色为白色 */
+    margin: 5px 3px;
+    /* 设置外边距为左右上下像素左右3像素  */
+    background-image: url(images/背景介绍.jpg);
+    background-size: cover;
+    /* 设置图片样式为填充至区块 */
+    background-repeat: no-repeat;
+    /* 设置图片不重复 */
+    display: flex;
+    /* 将所选内容排列方式修改为flex方式 */
+    flex-direction: column;
+    /* 从上到下排列 */
+}
+.main1 div{
+    position: absolute;
+    /* 绝对移动 */
+    top: 100px;
+    /* 与上边框距离 */
+    right: 100px;
+    /* 与右侧边框的距离 */
+    border: 0px solid;
+    /* 设置边框 */
+    padding: 80px;
+    /* 内边距80像素 */
+    display: flex;
+    /* 修改flex排列方式 */
+    align-items: center;
+    /* 纵向居中 */
+    justify-content: center;
+    /* 横向居中 */
+    flex-direction: column;
+    /* 所在区块的子元素从上到下排列 */
+}
+.main1 h2{
+    color:black;
+    font-size: 35px;
+    font-family: "幼圆";
+    position: absolute;
+    /* 绝对移动 */
+    top: 5px;
+    /* 距离所在区块上边框5像素 */
+
+}
+.main1 p{
+    color: aqua;
+    font-size: 22;
+    font-family: "仿宋";
+}
+#main2{
+    color: black;
+    font-size: 10px;
+    font-family: "行楷";
+}
+/* 以下为我们的服务 区域样式 */
+.main3{
+    display: flex;
+    align-items: center;
+    /* 设置子元素纵向居中 */
+    justify-content: space-between;
+    /* 设置子元素向两边散开 */
+    padding: 20px 10px;
+}
+.main3 img{
+    width: 30%;
+    height: 30%;
+    margin-left: 30px;
+    /* 设置所选内容左侧外边距 */
+    justify-content: left;
+    /* 设置所选内容位于所在区块最左侧 */
+    border-radius: 18px;
+    /* 设置引用内容边框的圆角 */
+    border: 0px solid;
+}
+.main3 div{
+    border: 0px solid;
+    height:50%;
+    color: white;
+    width: 70%;
+    /* 设置所选内容占据区块宽度70%*/
+    display: flex;
+    justify-content: center;
+    /* 设置子元素横向居中 */
+    padding-left: 30px;
+    flex-direction: column;
+    /* 设置子元素从上到下排列 */
+}
+.main3 h2{
+    color:white;
+    font-size: 45px;
+    font-family: "幼圆";
+    padding: 30px 0;
+    /* 设置所选内容上下边距 左右不变 */
+
+}
+.main3 li{
+    color:white;
+    font-size: 23px;
+    font-family: "幼圆";
+    line-height: 1.5em;
+    /* 设置行高为1.5倍 */
+}
+
+/* 以下为加入我们 区域的样式 */
+.main4 {
+    height: 400px;
+
+    background-color: rgb(87, 238, 228);
+    display: flex;
+    flex-direction: column;
+    /* 子元素上下排列 */
+}
+.zeor{
+    
+    color: black;
+    font-family: "幼圆";
+    font-size: 35px;
+    top: 0%;
+    display: flex;
+    justify-content:center;
+    border: 0px solid;
+}
+.one{
+    color: white;
+    font-family: "幼圆";
+    display: flex;
+    border: 0px solid;
+    justify-content: space-between;
+}
+.one ol{
+    list-style: none;
+    /* 消除文本自带样式（此处为消除有序列表自带数字） */
+    font-size: 25px;
+    background-color: rgb(170, 127, 9);
+    border-radius: 20px;
+    padding:20px;
+    margin: 10px;
+    margin-right: 10%;
+    /* 设置所选内容与右侧外边距的距离 */
+    line-height: 1.5em;
+    /* 设置1.5倍行高（行间距） */
+}
+.one ul{
+    list-style: none;
+    /* 消除无序列表自带圆点 */
+    font-size: 25px;
+    background-color: rgb(170, 127, 9);
+    border-radius: 20px;
+    padding:20px;
+    margin: 10px;
+    margin-left: 10%;
+    /* 设置所选内容与左侧外边距的距离 */
+    line-height: 1.5em;
+    /* 设置1.5倍行高（行间距） */
+}
+
+/* 页脚部分 */
+footer{
+    background-color: rgb(3, 84, 57);
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    /* 设置子元素排列类型为flex */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input,button{
+    background-color: transparent;
+    /* 设置背景色为透明 */
+    border: 0px ;
+}
+input:hover{
+    /* 设置在光标选中该内容时运用以下样式 */
+    border: 2px dashed black;
+    cursor: pointer;
+    /* 修改光标样式 */
+}
+button:hover{
+    color: aquamarine;
+    border: 2px solid rgb(101, 163, 101);
+    cursor: pointer;
+}
+
+/* 响应式样式 */
+@media screen and (max-width:780px){
+    /* 窗口大小小于780像素时触发 */
+    h1{
+        left: 50%;
+        /* 设置所选内容距离区块边框左侧50%区块长度 */
+        transform:translateX(-50%);
+        /* 向x轴负方向移动50%内容宽度 */
+    }
+    header ul{
+        display: none;
+        /* 设置所选内容所有样式消失 */
+    }
+    .meun{
+        display: block;
+        /* 设置所选内容样式出现 */
+        color: white;
+        top: 20px;
+        margin-left: 10px;
+    }
+    .meun:hover{
+        border: 2px solid rgb(73, 184, 227);
+        cursor: pointer;
+    }
+}
